@@ -1,5 +1,7 @@
+package domain.util
+
+import domain.model.Group
 import domain.model.Fan
-import domain.util.TeamEnum
 
 class GroupBuilder {
     private var group: Group? = null

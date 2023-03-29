@@ -1,4 +1,5 @@
 import domain.model.Fan
+import domain.util.GroupBuilder
 import domain.util.TeamEnum
 
 fun main(args: Array<String>) {

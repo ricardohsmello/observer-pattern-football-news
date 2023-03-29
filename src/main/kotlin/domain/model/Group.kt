@@ -14,20 +14,21 @@ class Group(teamEnum: TeamEnum) {
         listeners[teamEnum] = ArrayList()
     }
 
-    fun subscribe(user: FootballNews) {
+    fun subscribe(fan: FootballNews) {
         val list: MutableList<FootballNews> = listeners[teamEnum]!!
-        list.add(user)
+        list.add(fan)
     }
 
-    fun unsubscribe(user: FootballNews) {
+    fun unsubscribe(fan: FootballNews) {
         val list: MutableList<FootballNews> = listeners[teamEnum]!!
-        list.remove(user)
+        list.remove(fan)
     }
 
-    fun notify(msg: String) {
-        val users: List<FootballNews> = listeners[teamEnum]!!
-        for (sub in users) {
-            sub.notify(teamEnum, msg)
+    fun notify(message: String) {
+        val fans: List<FootballNews> = listeners[teamEnum]!!
+        for (sub in fans) {
+            sub.notify(teamEnum, message)
         }
     }
 }
+

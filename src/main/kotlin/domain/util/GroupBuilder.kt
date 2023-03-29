@@ -10,9 +10,9 @@ class GroupBuilder {
         return this
     }
 
-    fun subscribe(users: List<Fan>): GroupBuilder {
-        for (user in users) {
-            subscribe(user)
+    fun subscribe(fans: List<Fan>): GroupBuilder {
+        for (fan in fans) {
+            subscribe(fan)
         }
         return this
     }

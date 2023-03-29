@@ -1,3 +1,5 @@
+package domain.model
+
 import domain.service.FootballNews
 import domain.util.TeamEnum
 import java.util.*

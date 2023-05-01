@@ -12,7 +12,6 @@ class NewsSystemBuilder(team: Team) {
     fun unsubscribe(fan: Fan) = apply { newsPublisher.unsubscribe(fan) }
 
     fun notify(message: String) = apply { newsPublisher.notify(message) }
-
     companion object {
         fun forTeam(team: Team) = NewsSystemBuilder(team)
     }

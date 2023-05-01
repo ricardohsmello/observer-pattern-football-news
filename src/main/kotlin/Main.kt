@@ -3,7 +3,6 @@ import model.Team
 import util.NewsSystemBuilder
 
 fun main() {
-
     val ricardo = Fan("Ricardo")
     val maria = Fan("Maria")
 
